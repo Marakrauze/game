@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number game</title>
+</head>
+<body>
+    
+
+    <script>
+    let number = prompt ("Please enter number", "");
+    
+            if(number < 10) {
+            alert("success, number is smaller than 10")
+            for(var i = 0; i < 10; i++) {
+            if( i == number) {
+                console.log( `Here is a ${i} <- this is your number`)
+            } else {
+                console.log(`Here is a ${i}`)
+            }
+        }
+
+        } else if(number > 10) {
+            alert("You typed number bigger than 10");
+
+        } else {
+            alert("error, please type a number");
+        } 
+
+    </script>
+
+<h1>Number game!</h1>
+
+<input type="button" value="REFRESH" onClick="window.location.reload()">
+    
+</body>
+</html>
